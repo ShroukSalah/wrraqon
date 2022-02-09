@@ -468,13 +468,12 @@
     #mainSlider .swiper-slide {
         height: 200px;
     }
-    
-    #mainSlider .swiper-slide img {
+    /* #mainSlider .swiper-slide img {
         height: 100%;
         object-fit: contain;
         width: 100% !important;
         background: white;
-    }
+    } */
     
     .advert-header {
         height: 93px;
