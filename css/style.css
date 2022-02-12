@@ -71,6 +71,9 @@
     
     .form-control {
         background-color: #fff;
+        text-align-last: right;
+        direction: rtl;
+        text-align: right;
     }
     
     .form-control::placeholder {
@@ -172,6 +175,14 @@
     
     .h-75vh {
         height: 75vh;
+    }
+    
+    .h-150 {
+        height: 150px;
+    }
+    
+    .h-200 {
+        height: 200px;
     }
     
     .h-250 {
@@ -285,6 +296,18 @@
     .swiper-button-prev:after {
         color: #E1B726;
     }
+    
+    .gray-bg {
+        background-color: #f4f4f4;
+    }
+    
+    .books-categories {
+        background-color: #333;
+    }
+    
+    .bg-opacity {
+        background-color: #f4f4f429;
+    }
     /* =============== hover ================ */
     
     a,
@@ -302,7 +325,9 @@
     #Pre-OrdersSlider .swiper-slide .book:hover img,
     #Pre-OrdersSlider .swiper-slide .book .addToCart,
     .postcode-btn,
-    .bottom-nav li {
+    .bottom-nav li,
+    .books-categories .category i,
+    .books-categories .category:after {
         transition: all .5s ease-in-out;
     }
     
@@ -892,6 +917,100 @@
     footer ul li {
         margin-bottom: 5px;
     }
+    /* ==================== books page ================ */
+    
+    .auther-img {
+        width: 90px;
+        height: 90px;
+        border-radius: 100%;
+    }
+    
+    .more-hover {
+        color: #333;
+    }
+    
+    .more-hover:hover {
+        color: #E1B726 !important;
+    }
+    
+    .subjects li a,
+    .lists li a,
+    .availability li a,
+    .price li a {
+        border: 1px solid transparent;
+        border-radius: 7px;
+        transition: none;
+    }
+    
+    .subjects li a:hover,
+    .lists li a:hover,
+    .availability li a:hover,
+    .price li a:hover {
+        border-color: #d2d2d2;
+    }
+    
+    .books-categories .category {
+        color: #000;
+        font-size: 16px;
+        font-weight: 700;
+        position: relative;
+        height: 100%;
+    }
+    
+    .books-categories .category i {
+        position: absolute;
+        left: 15px;
+        top: 35%;
+    }
+    
+    .books-categories .category:hover i {
+        left: 10px;
+        color: #e1b726;
+    }
+    
+    .books-categories .category:after {
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        right: 0;
+        width: 100%;
+        height: 5px;
+        background: #e1b726;
+        opacity: 0;
+    }
+    
+    .books-categories .category:hover:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 5px;
+        background: #e1b726;
+        opacity: 1;
+    }
+    
+    .see-all {
+        border-color: #fff;
+    }
+    
+    .breadcrumb {
+        background: none;
+        color: #fff;
+    }
+    
+    .breadcrumb a,
+    .breadcrumb-item.active {
+        color: #ffffff;
+        padding-inline: 0;
+    }
+    
+    .breadcrumb-item+.breadcrumb-item::before {
+        display: inline-block;
+        padding-left: 0.5rem;
+        color: #ffffff;
+        content: ">";
+    }
     /* =================================
      media
   ==================================== */
@@ -923,5 +1042,17 @@
         .swiper-button-prev:after {
             font-size: 20px;
             font-weight: 700;
+        }
+        .books-categories .category i {
+            left: 5px;
+        }
+         ::placeholder {
+            font-size: 15px;
+        }
+        .auther-books img.h-200 {
+            height: 150px;
+        }
+        .newsLetter-img {
+            height: 100px;
         }
     }
